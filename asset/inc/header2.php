@@ -1,5 +1,5 @@
 <?php
-
+require('asset/inc/function.php');
 session_start()
 ?>
 
@@ -27,17 +27,24 @@ session_start()
                 <a href="index.php" class="nav-link-active">Accueil</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">A propos</a>
+                <a href="propos.php" class="nav-link">A propos</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Services</a>
+                <a href="service.php" class="nav-link">Services</a>
             </li>
             <li class="nav-item">
                 <a href="contact.php" class="nav-link">Contact</a>
             </li>
-            <li class="nav-item">
-                <a href="inscri.php"> <button class="btn-identifier">S'identifier</button></a>
-            </li>
+            <?php if(isLogged()) {  ?>
+                <a href="back-office/index.php"><button class="btn-identifier">Voir mon réseaux</button></a>
+                <a href="back-office/deconnexion.php"><button class="btn-identifier red_d">Se deconnecter </button></a>
+            <?php }  ?>
+
+            <?php if(!isLogged()) {  ?>
+                <a href="inscri.php"><button class="btn-identifier">S'identifier</button></a>
+
+                </li>
+            <?php }  ?>
         </ul>
         </ul>
     </nav>

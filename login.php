@@ -2,15 +2,19 @@
 
 
 <?php
-require('asset/inc/function.php');
+include('asset/inc/header2.php');
 
 if(isLogged()){
     header('Location: index.php');
 }
 
-include('asset/inc/header2.php');
 
 ?>
+
+<div id="loading">
+    <img src="asset/img/gif-loading.webp" alt="Chargement en cours">
+    <p>Chargement<span id="dots">...</span></p>
+</div>
 <section id="login">
     <div class="wrap3">
         <div class="login_form">
@@ -20,7 +24,7 @@ include('asset/inc/header2.php');
                     <p>
                         Inscrivez vous dès maintenant et ayez accès au suivi de votre réseau !
                     </p>
-                    <a href="index.php">S'inscrire</a>
+                    <a href="inscri.php">S'inscrire</a>
                 </div>
                 <img src="../../../testlink/asset/img/log.svg" class="image" style="width: 80%; margin-left: 20%; margin-top: 2%"" alt="" />
             </div>
@@ -96,5 +100,6 @@ include('asset/inc/header2.php');
         }
     }</script>
 <script src="asset/main-js/login.js"></script>
+<?php include ('asset/inc/footer.php');
 
 

@@ -10,6 +10,7 @@ session_start()
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>html</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="asset/css/style.css">
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Sliding-Sign-In-Sign-Up-Form-master/style.css" />
@@ -25,10 +26,10 @@ session_start()
                 <a href="index.php" class="nav-link-active">Accueil</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">A propos</a>
+                <a href="propos.php" class="nav-link">A propos</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Services</a>
+                <a href="service.php" class="nav-link">Services</a>
             </li>
             <li class="nav-item">
                 <a href="contact.php" class="nav-link">Contact</a>
@@ -38,10 +39,12 @@ session_start()
 
                 <?php if(isLogged()) {  ?>
                     <a href="back-office/index.php"><button class="btn-identifier">Voir mon réseaux</button></a>
+                    <a href="back-office/deconnexion.php"><button class="btn-identifier red_d">Se deconnecter </button></a>
             <?php }  ?>
 
                 <?php if(!isLogged()) {  ?>
                 <a href="inscri.php"><button class="btn-identifier">S'identifier</button></a>
+
             </li>
                 <?php }  ?>
 

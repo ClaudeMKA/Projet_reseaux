@@ -1,8 +1,7 @@
 <?php
 include ('asset/inc/header.php');
-debug($_SESSION);
 ?>
-
+    =
 
 
 		<!-- MAIN -->
@@ -74,7 +73,7 @@ debug($_SESSION);
                     <div class="table-data">
                         <div class="order">
                             <div class="head">
-                                <h3>les différents nom </h3>
+                                <h3>les différents Protocoles </h3>
                                 <canvas id="chartjs-line"></canvas>
                                 <p>TCP, ICMP, TLSv2 et UDP sont tous des protocoles de réseau qui sont utilisés pour transmettre des données sur Internet</p>
                             </div>
@@ -82,7 +81,7 @@ debug($_SESSION);
                         </div>
                         <div class="todo">
                             <div class="head">
-                                <h3>Les différents paquets </h3>
+                                <h3> Les Logs </h3>
                                 <div class="log">
 
                                 </div>

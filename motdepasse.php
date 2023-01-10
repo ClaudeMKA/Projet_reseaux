@@ -31,6 +31,10 @@ if (!empty($_POST['submit'])){
 }
 
 include('asset/inc/header.php'); ?>
+    <div id="loading">
+        <img src="asset/img/gif-loading.webp" alt="Chargement en cours">
+        <p>Chargement<span id="dots">...</span></p>
+    </div>
     <section id="oublie">
         <div class="wrap4">
             <div class="form_oublie">

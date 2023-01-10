@@ -21,20 +21,20 @@
   label: '',
   data: ttl_nombre,
   backgroundColor: [
-    '#87CEEB',
-  '#40E0D0',
-  '#90EE90',
-  '#E6E6FA',
-  '#FFB6C1',
+    '#191970',
+  '#00BFFF',
+  '#B0E0E6',
+  '#000000',
+  '#808080',
   '#D3D3D3',
 
   ],
   borderColor: [
-    '#87CEEB',
-    '#40E0D0',
-    '#90EE90',
-    '#E6E6FA',
-    '#FFB6C1',
+    '#191970',
+    '#00BFFF',
+    '#B0E0E6',
+    '#000000',
+    '#808080',
     '#D3D3D3',
 
   ],
@@ -72,19 +72,19 @@
     label: '',
     data: ttl_nmb,
     backgroundColor: [
-      '#87CEEB',
-      '#40E0D0',
-      '#90EE90',
-      '#E6E6FA',
-      '#FFB6C1',
+      '#191970',
+      '#00BFFF',
+      '#B0E0E6',
+      '#000000',
+      '#808080',
       '#D3D3D3',
     ],
     borderColor: [
-      '#87CEEB',
-      '#40E0D0',
-      '#90EE90',
-      '#E6E6FA',
-      '#FFB6C1',
+      '#191970',
+      '#00BFFF',
+      '#B0E0E6',
+      '#000000',
+      '#808080',
       '#D3D3D3',
     ],
     borderWidth: 1
@@ -149,7 +149,7 @@
           for (let i= 0; i < data.length; i++){
             divBase.innerHTML += `<p> L'adresse ip <span style="color:  #3C91E6;">${data[i].adresse_ip}</span> de type <span style="color: #3C91E6;">${data[i].name}</span> à envoyer un paquet de type
  <span style="color:  #3C91E6;">${data[i].status}
- </span> du port <span style="color:  #3C91E6;">${data[i].from_}</span> au port de dest <span style="color:  #3C91E6;">${data[i].dest}</span>à l'adresse ip de dest 
+ </span> du port <span style="color:  #3C91E6;">${data[i].from_}</span> au port de dest <span style="color:  #3C91E6;">${data[i].dest}</span> à l'adresse ip de dest 
   <span style="color:  #3C91E6;">${data[i + 1].adresse_ip}</span>. </p> <br>`;
             divBase.classList.add('log-text');
           }

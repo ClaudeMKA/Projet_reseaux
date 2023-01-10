@@ -28,7 +28,7 @@
         <li><a href="#">Services</a></li>
         <li><a href="#">Contact</a></li>
     </ul>
-    <p>Copyright © 2023 LinkNetwork. Tous droits réservés. | <a href="">Mentions légales</a></p>
+    <p>Copyright © 2023 LinkNetwork. Tous droits réservés. | <a href="mention.php">Mentions légales</a></p>
 </footer>
 <script src="asset/js/main.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -46,3 +46,9 @@
             e=true;
         }
     }</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="asset/main-js/loading.js"></script>
+<script>
+    AOS.init();
+</script>

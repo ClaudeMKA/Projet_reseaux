@@ -1537,6 +1537,31 @@ form#inscription-form{
 }
 
 /* resposive */
+@media only screen and (max-width: 680px) {
+    .banner-container h1{
+        font-size: 3rem;
+    }
+    .aboutp .aboutp-container{
+        display: flex;
+        /* flex-direction: row; */
+        /* flex-wrap: nowrap; */
+        justify-content: center;
+        align-items: normal;
+        align-content: normal;
+        flex-direction: column;
+        text-align: -webkit-center;
+    }
+    .servicesp .servicesp-container {
+        display: flex;
+        /* flex-direction: row; */
+        /* flex-wrap: nowrap; */
+        justify-content: center;
+        align-items: normal;
+        align-content: normal;
+        flex-direction: column;
+        text-align: -webkit-center;
+    }
+}
 @media only screen and (max-width: 1200px) {
     .banner-container h1{
         font-size: 3rem;
@@ -1621,6 +1646,10 @@ form#inscription-form{
     .banner-container p{
         font-size: 0.8rem;
     }
+    .aboutp-container h1{
+      font-size: 2rem;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -1992,5 +2021,279 @@ input#subject {
     margin-top:17rem;
     margin-bottom: 5rem;
 }
+button.btn-identifier.red_d{
+    background-color: #DB504A;
+    color: white;
+}
 
 
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bleu2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 9999;
+    transition: all 0.5s ease-in-out;
+}
+
+#loading img {
+    width: 150px;
+    height: 150px;
+}
+
+#loading p {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--blanc);
+}
+
+#dots {
+    animation: dots 1.5s infinite;
+}
+
+@keyframes dots {
+    0%, 20% {
+        color: transparent;
+    }
+    50%, 100% {
+        color: var(--blanc);
+    }
+}
+.nb-c ul.nav-contact {
+gap: 1rem;
+}
+.floating {
+    animation: floating 6s ease-in-out 0s infinite;
+}
+@keyframes floating {
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+/* About me */
+
+
+.aboutp h1 {
+    font-size: 4rem;
+    line-height: 100%;
+    font-weight: bold;
+    color: var(--bleu1);
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.aboutp-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: normal;
+    align-content: normal;
+}
+
+.aboutp-container h3 {
+    font-size: 3rem;
+    line-height: 100%;
+    font-weight: bold;
+    color: var(--bleu1);
+    margin-bottom: 50px;
+}
+
+.aboutp-container p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--bleu2);
+}
+
+.aboutp-container a {
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--bleu1);
+    margin-bottom: 25px;
+}
+
+.aboutp-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    padding: 25px 50px;
+    margin: auto;
+}
+
+.aboutp-items:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    padding: 25px 50px;
+    margin: auto;
+}
+
+/* service */
+.servicesp h1 {
+    font-size: 4rem;
+    line-height: 100%;
+    font-weight: bold;
+    color: var(--bleu1);
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.servicesp-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: normal;
+    align-content: normal;
+    text-align: center;
+}
+
+.servicesp-container h3 {
+    font-size: 3rem;
+    line-height: 100%;
+    font-weight: bold;
+    color: var(--bleu1);
+    margin-bottom: 50px;
+}
+
+.servicesp-container p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--bleu2);
+}
+
+.servicesp-container a {
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--bleu1);
+    margin-bottom: 25px;
+}
+
+.servicesp-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    padding: 25px 50px;
+    margin: auto;
+}
+
+.servicesp-items:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    padding: 25px 50px;
+    margin: auto;
+}
+
+.legal-noticesp h1 {
+    font-size: 4rem;
+    line-height: 100%;
+    font-weight: bold;
+    color: var(--bleu1);
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.legal-noticesp-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: normal;
+    align-content: normal;
+    text-align: center;
+}
+
+.legal-noticesp-container h3 {
+    font-size: 1.5rem;
+    line-height: 100%;
+    font-weight: 400;
+    color: var(--bleu1);
+    margin-bottom: 25px;
+}
+
+.legal-noticesp-container h3 a {
+    font-size: 1.5rem;
+    line-height: 100%;
+    font-weight: 400;
+    color: var(--bleu1);
+    margin-bottom: 25px;
+}
+
+.legal-noticesp-container h3 a:hover {
+    font-size: 1.5rem;
+    line-height: 100%;
+    font-weight: 400;
+    color: var(--bleu2);
+    margin-bottom: 25px;
+}
+
+.legal-noticesp-container p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--bleu2);
+    margin-bottom: 25px;
+}
+
+
+.legal-noticesp-container a {
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--bleu1);
+    margin-bottom: 25px;
+}
+
+.legal-noticesp-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    padding: 25px 50px;
+    margin: auto;
+}
+
+.legal-noticesp-items:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    padding: 25px 50px;
+    margin: auto;
+}

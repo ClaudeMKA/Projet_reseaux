@@ -1,13 +1,18 @@
 <?php
+include('asset/inc/header2.php');
 include('asset/inc/pdo.php');
-require('asset/inc/function.php');
+
 
 
 if(isLogged()){
     header('Location: index.php');
 }
-include('asset/inc/header2.php');
+
 ?>
+<div id="loading">
+    <img src="asset/img/gif-loading.webp" alt="Chargement en cours">
+    <p>Chargement<span id="dots">...</span></p>
+</div>
 <section id="regis">
 
     <div class="wrap3">
@@ -78,7 +83,7 @@ include('asset/inc/header2.php');
                 </p>
                 <a href="login.php">Se connecter</a>
 
-                <img src=asset/img/log.svg class="image1" style="width: 70%; margin-top: 5%" alt="" />
+                <img src=asset/img/log.svg class="image1 floating" style="width: 70%; margin-top: 5%" alt="" />
 
                 <div>
                 </div>

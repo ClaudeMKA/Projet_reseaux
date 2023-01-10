@@ -1,10 +1,12 @@
 <?php
 
-session_start();
 require('asset/inc/pdo.php');
-require('asset/inc/function.php');
 
-include('asset/inc/header.php'); ?>
+include('asset/inc/header2.php'); ?>
+<div id="loading">
+    <img src="asset/img/gif-loading.webp" alt="Chargement en cours">
+    <p>Chargement<span id="dots">...</span></p>
+</div>
 
 
 <section id="cgu">

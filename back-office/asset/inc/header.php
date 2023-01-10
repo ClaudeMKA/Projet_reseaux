@@ -56,6 +56,13 @@ if (!isLogged()){
                 <span class="text">Déconnexion</span>
             </a>
         </li>
+
+        <li>
+            <a href="../index.php" class="home">
+                <i class="fa-sharp fa-solid fa-house"></i>
+                <span class="text">Acceuil</span>
+            </a>
+        </li>
     </ul>
 </section>
 <!-- SIDEBAR -->
