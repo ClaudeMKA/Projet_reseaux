@@ -26,7 +26,7 @@ if(isLogged()){
                     </p>
                     <a href="inscri.php">S'inscrire</a>
                 </div>
-                <img src="../../../testlink/asset/img/log.svg" class="image" style="width: 80%; margin-left: 20%; margin-top: 2%"" alt="" />
+                <img  src="asset/img/log.svg" class="image" style="width: 80%; margin-left: 20%; margin-top: 6%"" alt="" />
             </div>
             <div class="log_droite">
                 <form id="inscription-form" method="post">
@@ -91,11 +91,11 @@ if(isLogged()){
     function changer(){
         if(e){
             document.getElementById("password").setAttribute("type","text");
-            document.getElementById("eye").src="asset/img/eye-regular.svg"
+            document.getElementById("eye").src="assetss/img/eye-regular.svg"
             e=false;
         } else {
             document.getElementById("password").setAttribute("type","password");
-            document.getElementById("eye").src="asset/img/eye-slash-regular.svg"
+            document.getElementById("eye").src="assetss/img/eye-slash-regular.svg"
             e=true;
         }
     }</script>

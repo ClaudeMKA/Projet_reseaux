@@ -1,7 +1,7 @@
 <?php
 include ('asset/inc/header.php');
 ?>
-    =
+
 
 
 		<!-- MAIN -->
@@ -59,7 +59,7 @@ include ('asset/inc/header.php');
 				</div>
 				<div class="todo">
 					<div class="head">
-						<h3>Les différents paquets </h3>
+						<h3>Les différents status des protocoles </h3>
                         <canvas id="chartjs-donut"></canvas>
                         <p> "success" :  le paquet a été envoyé avec succès et que sa destination a été atteinte.
                             <br> "unknown" : le statut du paquet n'est pas connu ou n'a pas pu être déterminé.

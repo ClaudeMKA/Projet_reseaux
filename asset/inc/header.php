@@ -9,7 +9,8 @@ session_start()
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>html</title>
+    <title>Link Network</title>
+    <link rel="icon" href="asset/img/logo-icon.png" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="asset/css/style.css">
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
@@ -20,7 +21,7 @@ session_start()
 
 <header>
     <nav class="navbar">
-        <a href="#" class="nav-logo"><img src="asset/img/logo.png" alt="Logo"></a>
+        <a href="index.php" class="nav-logo"><img src="asset/img/logo.png" alt="Logo"></a>
         <ul class="nav-menu">
             <li class="nav-item">
                 <a href="index.php" class="nav-link-active">Accueil</a>

@@ -32,7 +32,7 @@ include('asset/inc/header.php');
             <p>Nous vous offrons une gamme complète de services pour améliorer la performance et la sécurité de votre réseau. Faites confiance à notre expertise et obtenez des résultats concrets.</p>
             <a href="#abt"><button class="btn-banner">Commencer</button></a>
         </div>
-        <div class="banner-items floating">
+        <div class="banner-items">
             <a href="#"><img src="asset/img/img-banner.png" alt="Image banner"></a>
         </div>
     </div>
